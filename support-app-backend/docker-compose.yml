@@ -1,0 +1,81 @@
+# @format
+
+services:
+  support-app-backend:
+    build: .
+    ports:
+      - "9000:9000"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+    depends_on:
+      - postgres
+      - chromadb
+    volumes:
+      - ./app:/app/app
+      - support_chroma_data:/app/chroma_db
+    networks:
+      - app-network
+    restart: unless-stopped
+    command: uvicorn main:app --host 0.0.0.0 --port 9000 --reload
+
+  chromadb:
+    image: chromadb/chroma:latest
+    ports:
+      - "8001:8000"
+    environment:
+      - ALLOW_RESET=true
+      - CHROMA_SERVER_CORS_ALLOW_ORIGINS=["*"]
+      - IS_PERSISTENT=true
+      - PERSIST_DIRECTORY=/chroma/chroma_data
+      - CHROMA_SERVER_HOST=0.0.0.0
+      - CHROMA_OPEN_TELEMETRY__ENDPOINT=http://otel-collector:4317
+      - CHROMA_OPEN_TELEMETRY__SERVICE_NAME=chroma
+    volumes:
+      - chroma_data:/chroma/chroma_data
+    networks:
+      - app-network
+    restart: unless-stopped
+
+  postgres:
+    image: postgres:15
+    restart: always
+    environment:
+      POSTGRES_USER: support_user
+      POSTGRES_PASSWORD: support_pass_2024
+      POSTGRES_DB: support_tickets_db
+    ports:
+      - "5433:5432"
+    volumes:
+      - support_postgres_data:/var/lib/postgresql/data
+    networks:
+      - app-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U support_user -d support_tickets_db"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  zipkin:
+    image: openzipkin/zipkin
+    ports:
+      - "9411:9411"
+    depends_on: [otel-collector]
+    networks:
+      - app-network
+
+  otel-collector:
+    image: otel/opentelemetry-collector-contrib:0.111.0
+    command: ["--config=/etc/otel-collector-config.yaml"]
+    volumes:
+      - ${PWD}/otel-collector-config.yaml:/etc/otel-collector-config.yaml
+    networks:
+      - app-network
+
+volumes:
+  support_postgres_data:
+  support_chroma_data:
+  chroma_data:
+
+networks:
+  app-network:
+    driver: bridge

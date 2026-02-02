@@ -1,0 +1,15 @@
+{
+  "articles": [
+    {
+      "title": "Software Installation Guide",
+      "description": "How to install approved software",
+      "body": "# Software Installation Process\n\n## Self-Service Portal\n1. Visit software.company.com\n2. Log in with your company credentials\n3. Browse available software catalog\n4. Click 'Install' next to desired software\n5. Wait for automatic installation\n\n## Requesting New Software\n- Submit request through IT portal\n- Business justification required\n- Security review may take 2-3 days\n- Approval needed from manager\n\n## Prohibited Software\n- Peer-to-peer file sharing applications\n- Unauthorized cloud storage services\n- Personal messaging applications\n- Games and entertainment software\n\n## Need Help?\nContact IT Service Desk for assistance with software installations.",
+      "link": "https://help.company.com/software"
+    },
+    {
+      "title": "Email Configuration",
+      "description": "Set up email on various devices",
+      "body": "# Email Setup Instructions\n\n## Outlook Desktop\n1. Open Outlook\n2. File > Add Account\n3. Enter your email address\n4. Auto-configuration will detect settings\n5. Enter your password when prompted\n\n## Mobile Devices\n\n### iPhone/iPad\n1. Settings > Mail > Accounts\n2. Add Account > Exchange\n3. Email: your.name@company.com\n4. Server: mail.company.com\n5. Domain\\Username: COMPANY\\username\n\n### Android\n1. Email app > Add Account\n2. Exchange\n3. Follow similar settings as iOS\n\n## Manual Settings\n- **Incoming Server**: mail.company.com\n- **Port**: 993 (IMAP) or 995 (POP3)\n- **Outgoing Server**: smtp.company.com\n- **Port**: 587\n- **Encryption**: TLS\n\n## Troubleshooting\n- Verify username format (domain\\username)\n- Check password hasn't expired\n- Ensure device is on company network or VPN"
+    }
+  ]
+}

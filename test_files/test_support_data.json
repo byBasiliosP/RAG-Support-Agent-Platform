@@ -1,0 +1,41 @@
+{
+  "Support_FAQ": [
+    {
+      "Question": "How do I reset my password?",
+      "Answer": "Go to login page and click \"Forgot Password\"",
+      "Category": "Authentication"
+    },
+    {
+      "Question": "What are the system requirements?",
+      "Answer": "Windows 10 or later, 8GB RAM minimum",
+      "Category": "Technical"
+    },
+    {
+      "Question": "How to contact support?",
+      "Answer": "Email: support@company.com or call 1-800-HELP",
+      "Category": "Contact"
+    },
+    {
+      "Question": "What payment methods are accepted?",
+      "Answer": "Credit cards, PayPal, and bank transfers",
+      "Category": "Billing"
+    }
+  ],
+  "Product_Info": [
+    {
+      "Product": "Basic Plan",
+      "Price": ".99/month",
+      "Description": "Essential features for small teams"
+    },
+    {
+      "Product": "Pro Plan",
+      "Price": ".99/month",
+      "Description": "Advanced features with priority support"
+    },
+    {
+      "Product": "Enterprise",
+      "Price": "Contact Sales",
+      "Description": "Custom solutions for large organizations"
+    }
+  ]
+}

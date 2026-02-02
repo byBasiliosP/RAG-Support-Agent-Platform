@@ -1,0 +1,19 @@
+[
+  {
+    "title": "How to Reset Your Password",
+    "summary": "Step-by-step guide for password reset",
+    "content": "# Password Reset Guide\n\n## Quick Steps\n1. Go to the login page\n2. Click 'Forgot Password'\n3. Enter your email address\n4. Check your email for reset link\n5. Follow the link and create a new password\n\n## Important Notes\n- The reset link expires after 24 hours\n- Use a strong password with at least 8 characters\n- Include uppercase, lowercase, numbers, and symbols\n\n## Still Having Issues?\nContact IT support at support@company.com or call (555) 123-4567.",
+    "url": "https://help.company.com/password-reset"
+  },
+  {
+    "title": "VPN Setup Instructions",
+    "summary": "Configure VPN access for remote work",
+    "content": "# VPN Setup Guide\n\n## Windows Setup\n1. Download the VPN client from the IT portal\n2. Install using administrator privileges\n3. Enter your company credentials\n4. Connect to the 'Corporate' server\n\n## Mac Setup\n1. Open System Preferences > Network\n2. Click '+' to add new connection\n3. Choose VPN (L2TP over IPSec)\n4. Enter server address: vpn.company.com\n5. Use your Active Directory credentials\n\n## Mobile Setup\n- iOS: Use built-in VPN settings\n- Android: Download company VPN app from Google Play\n\n## Troubleshooting\n- Ensure you're not already connected to company WiFi\n- Check firewall settings\n- Contact IT if connection fails repeatedly",
+    "url": "https://help.company.com/vpn-setup"
+  },
+  {
+    "title": "Printer Configuration",
+    "summary": "How to add and configure network printers",
+    "content": "# Printer Setup Guide\n\n## Adding Network Printers\n\n### Windows\n1. Open Settings > Devices > Printers & scanners\n2. Click 'Add a printer or scanner'\n3. Select your printer from the list\n4. Follow installation prompts\n\n### Mac\n1. Open System Preferences > Printers & Scanners\n2. Click '+' to add printer\n3. Select from available printers\n4. Choose appropriate driver\n\n## Common Printer Locations\n- **Main Office**: HP_LaserJet_Floor2\n- **Conference Room A**: Canon_MX920_ConfA\n- **Break Room**: Epson_WorkForce_Kitchen\n\n## Troubleshooting\n- Verify network connection\n- Check printer queue for stuck jobs\n- Restart print spooler service\n- Update printer drivers\n\n## Print Policies\n- Color printing requires approval for large jobs\n- Use duplex (double-sided) when possible\n- Limit personal printing to 50 pages/month"
+  }
+]

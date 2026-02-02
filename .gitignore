@@ -1,0 +1,46 @@
+# OS
+.DS_Store
+
+# Env files
+.env
+.env.*
+
+# Node / Next.js
+node_modules/
+new-support-app/node_modules/
+.next/
+new-support-app/.next/
+.out/
+new-support-app/.out/
+build/
+new-support-app/build/
+dist/
+new-support-app/dist/
+coverage/
+new-support-app/coverage/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+support-app-backend/venv/
+
+# Data / local volumes
+support-app-backend/chroma_db/
+support-app-backend/support_chroma_db/
+
+# IDE
+.vscode/
+.idea/

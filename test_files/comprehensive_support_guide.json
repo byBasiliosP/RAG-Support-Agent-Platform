@@ -1,0 +1,83 @@
+{
+  "Troubleshooting_Guide": [
+    {
+      "Problem Category": "Network",
+      "Issue Description": "Cannot connect to Wi-Fi",
+      "Solution Steps": "Check network settings, restart router, update drivers",
+      "Priority": "High",
+      "Estimated Time": "15 minutes"
+    },
+    {
+      "Problem Category": "Software",
+      "Issue Description": "Application crashes on startup",
+      "Solution Steps": "Clear cache, reinstall application, check system requirements",
+      "Priority": "Medium",
+      "Estimated Time": "30 minutes"
+    },
+    {
+      "Problem Category": "Hardware",
+      "Issue Description": "Computer running slowly",
+      "Solution Steps": "Check disk space, scan for malware, add more RAM",
+      "Priority": "Medium",
+      "Estimated Time": "45 minutes"
+    },
+    {
+      "Problem Category": "Email",
+      "Issue Description": "Cannot send emails",
+      "Solution Steps": "Check SMTP settings, verify account credentials, test connection",
+      "Priority": "High",
+      "Estimated Time": "10 minutes"
+    },
+    {
+      "Problem Category": "Printer",
+      "Issue Description": "Print jobs stuck in queue",
+      "Solution Steps": "Clear print queue, restart print spooler, reinstall drivers",
+      "Priority": "Low",
+      "Estimated Time": "20 minutes"
+    },
+    {
+      "Problem Category": "Security",
+      "Issue Description": "Suspected malware infection",
+      "Solution Steps": "Run full antivirus scan, update security software, quarantine threats",
+      "Priority": "Critical",
+      "Estimated Time": "60 minutes"
+    },
+    {
+      "Problem Category": "Database",
+      "Issue Description": "Connection timeout errors",
+      "Solution Steps": "Check database server status, verify connection strings, restart services",
+      "Priority": "Critical",
+      "Estimated Time": "25 minutes"
+    }
+  ],
+  "Support_Contacts": [
+    {
+      "Department": "IT Helpdesk",
+      "Contact Person": "John Smith",
+      "Phone": "555-1234",
+      "Email": "helpdesk@company.com",
+      "Hours": "24/7"
+    },
+    {
+      "Department": "Network Admin",
+      "Contact Person": "Sarah Johnson",
+      "Phone": "555-5678",
+      "Email": "network@company.com",
+      "Hours": "Mon-Fri 8AM-6PM"
+    },
+    {
+      "Department": "Security Team",
+      "Contact Person": "Mike Wilson",
+      "Phone": "555-9999",
+      "Email": "security@company.com",
+      "Hours": "24/7"
+    },
+    {
+      "Department": "Database Admin",
+      "Contact Person": "Lisa Chen",
+      "Phone": "555-4321",
+      "Email": "dba@company.com",
+      "Hours": "Mon-Fri 9AM-5PM"
+    }
+  ]
+}
